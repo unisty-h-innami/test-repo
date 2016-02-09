@@ -1,10 +1,7 @@
-<<<<<<< HEAD
 hoge
 
 hogehoge
 
 hogehogehoge
 
-=======
-heeeeeeogedsd
->>>>>>> refs/remotes/origin/master
+

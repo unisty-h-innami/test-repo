@@ -1,0 +1,15 @@
+@import helper._
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>データ登録</title>
+	</head>
+<body>
+	<h1>データ登録画面</h1>
+	<form action="@routes.ApplicationController.insert()" method="post">
+		@CSRF.formField
+		<input type="text" name="columnOne" >
+		<input type="submit" value="送信">
+	</form>
+</body>
+</html>

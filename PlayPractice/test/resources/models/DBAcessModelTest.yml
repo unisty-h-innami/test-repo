@@ -1,0 +1,4 @@
+users:
+- !!models.DBAcessModel
+   id:  1
+   columnOne: "qawse"

@@ -1,0 +1,26 @@
+@import models.DBAccessModel
+@import helper._
+@(msgs:List[DBAccessModel])
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+	<title>登録データ表示</title>
+	</head>
+<body>
+	<h1>登録データ表示画面</h1>
+	<table>
+		@for(msg <- msgs){
+			<tr>
+				<th width="50"> @msg.id</th>
+				<th width="100"> @msg.columnOne</th>
+			</tr>
+		}
+	</table>
+	<button type="submit" onclick="location.href='@routes.ApplicationController.getList()'">昇順</button>
+	<button type="submit" onclick="location.href='@routes.ApplicationController.getListIdDesc()'">降順</button>
+	<button type="button" onclick="location.href='@routes.ApplicationController.index()'">戻る</button>
+</body>
+
+</html>
